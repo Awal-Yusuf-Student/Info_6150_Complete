@@ -1,0 +1,145 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+  background-color:cornflowerblue;
+  font-family: sans-serif;
+}
+
+form {
+  display: grid;
+  padding: 1rem;
+  margin: 2rem auto 0 auto;
+  max-width: 600px;
+  border: 1px solid black;
+  background-color: lightpink;
+}
+
+form input {
+  border: 1px solid papayawhip;
+}
+
+form button {
+  background-color: lightgray;
+  padding: 0.7rem;
+  width: 100%;
+  border: 0;
+}
+
+form button:hover {
+  background-color: burlywood;
+}
+
+input {
+  padding: 0.7rem;
+  margin-bottom: 1.4rem;
+}
+
+
+.Usernameinput{
+    position: relative;
+    margin-left: 27px;
+  
+}
+
+
+.Emailinput{
+  position: relative;
+  margin-left: 60px;
+ 
+}
+
+
+.ConfirmEmailinput{
+  position: relative;
+  margin-left: 12px;
+}
+
+
+h1 img {float:left;
+  margin:0 5px 0 0;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  opacity: 1;
+  }
+
+.menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+.Requiredfields{
+  position: relative;
+  top: 10px;
+}
+
+.registerusername__error{
+  position: relative;
+  float: none;
+}
+@media screen and (min-width: 60rem) {
+  form {
+    grid-template-columns: 200px 2fr;
+    grid-gap: 20px;
+  }
+
+  label{
+    text-align: right;
+    grid-column: span 1/2;
+
+  }
+
+  .Requiredfields{
+    grid-column: span 2;
+  }
+
+  .Usernameinput{
+    position: relative;
+    margin-left: 0px;
+  }
+
+  input,button {
+    grid-column: 2/3;
+  }
+
+  input {
+    padding: 0.7rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .Emailabel{
+    position: relative;
+    top: -9px;
+  }
+
+  .Emailinput{
+    position: relative;
+    top: 18px;
+    margin-left: -50px;
+  }
+
+  .ConfirmEmailinput{
+    position: relative;
+    margin-left: 0px;
+  }
+
+  .registeremail__error{
+    position: relative;
+    top: 58px;
+    left: -170px;
+  }
+
+  .registerusername__error{
+    position: relative;
+    float: left;
+  }
+}
+ 

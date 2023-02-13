@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css"/>
+   
+  </head>
+  
+  
+  <body>
+    <div id="homepage">
+      <header>   
+        <h1> Sign Up For Our Subscription Packages </h1>  
+      </header>
+
+      <main>
+      <form class="jsform" action='/register' method="post">
+        <div class="registerusername">
+        <label  for ="Username" >
+          Username: * </label>
+          
+           <input class="Usernameinput" name="username"  type="text">
+           <span class="registerusername__error">
+           </span>
+          </div>
+          <div class="registeremail">
+          <label class="Emailabel" for ="Email" >
+          Email: *  </label>
+
+          <input class="Emailinput" name="email"  type="text" >
+          <span class="registeremail__error">
+          </span> 
+        </div>
+        <div class="registeremailmatch">
+          <label for ="ConfirmEmail" >
+          Confirm Email:  </label> 
+
+          <input class="ConfirmEmailinput" name="emailmatch"  type="text">
+          <span class="emailmatch__error">
+          </span>
+        </div>
+        <label for ="checkbox" class="checkboxannoy">
+          <span>Want spam?</span>
+        <input type="checkbox" name="annoy_me"></label>
+        <label for="Tier">Choose a subscription tier:
+        <select name="tier" id="tier">
+        <option selected="Empty">Please Select</option>
+        <option value="1">Silver Fox</option>
+        <option value="2">Sly Fox</option>
+        <option value="3">Foxy Brown</option>
+        </select></label>
+        <button type="submit" class="register_button">Register</button>
+
+       <div class="Requiredfields"> * All fields indictaed with an asteric are required. </div> 
+      </form>
+    </main>
+      <footer>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </footer>
+    </div>
+    <script defer src="index.js" ></script> 
+  </body>
+</html>
+

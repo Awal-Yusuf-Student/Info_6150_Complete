@@ -1,0 +1,16 @@
+.Reorderbtn{
+  animation-name: App-logo-spin;
+  animation-duration: 1s;
+
+}
+
+@keyframes App-logo-spin {
+  from {
+   
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    pointer-events:none;
+  }
+}

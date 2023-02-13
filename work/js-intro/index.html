@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css"/>
+  </head>
+  <script> function myFunction() {
+    document.getElementById('mydropdown').classList.toggle('show');
+  } 
+  
+  
+  window.onclick = function(event) {
+    if (!event.target.matches('.menubtn')) {
+      const dropdowns = document.getElementsByClassName('dropdown-links')
+      var i
+      for (i = 0; i < dropdowns.length; i++) {
+        var opendrpdown = dropdowns[i]
+        if (opendrpdown.classList.contains('show')) {
+          opendrpdown.classList.remove('show')
+        }
+      }
+    }
+  }
+  </script>
+  <body>
+    <div id="homepage">
+      <header>   
+        <h1>   Fox News 
+        </h1>  
+        <div class="dropdownmenu">
+          <button onclick= "myFunction()" class="menubtn">Menu</button>
+          <div id="mydropdown" class="dropdown-links">
+            <a href="about.html">About</a>
+            <a href="home.html">Home</a>
+            <a href="blog.html">Blog</a>
+          </div>
+        </div>
+      </header>
+      <main class="foxesmain">
+          <h2>Latest News On Foxes</h2>
+          <div class="card">
+        <img class="card_pic" src="https://tinyurl.com/mk6nskvc" alt="Image Of Cat">
+        <h3 class="card_title">Fox Facts</h3>
+        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit deleniti facilis, sed iusto commodi autem tenetur aut ipsa, nam doloremque quisquam voluptate hic reprehenderit eos! Necessitatibus eos ullam commodi sunt.</p>
+      <a href="#" class="card_link">Read More</a>
+      </div>
+      <div class="card">
+        <img class="card_pic" src="https://tinyurl.com/mk6nskvc" alt="Image Of Cat">
+        <h3 class="card_title">Fox Facts</h3>
+        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit deleniti facilis, sed iusto commodi autem tenetur aut ipsa, nam doloremque quisquam voluptate hic reprehenderit eos! Necessitatibus eos ullam commodi sunt.</p>
+      <a href="#" class="card_link">Read More</a>
+      </div>
+      <div class="card">
+        <img class="card_pic" src="https://tinyurl.com/mk6nskvc" alt="Image Of Cat">
+        <h3 class="card_title">Fox Facts</h3>
+        <p class="card_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit deleniti facilis, sed iusto commodi autem tenetur aut ipsa, nam doloremque quisquam voluptate hic reprehenderit eos! Necessitatibus eos ullam commodi sunt.</p>
+      <a href="#" class="card_link">Read More</a>
+      </div>
+      </main>
+      <footer>
+        <div class="navbar">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </div>
+      </footer>
+  </body>
+</html>
+

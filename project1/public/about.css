@@ -1,0 +1,148 @@
+*, *::before, *::after{
+  box-sizing: border-box;
+}
+
+.h1{display:inline-block;
+}
+
+html, body{
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: whitesmoke;
+  font-family: sans-serif;
+}
+
+
+header{
+  margin-top: -25px;
+  padding: 0;
+  background-color: black;
+  color: whitesmoke;
+  
+}
+
+
+.menubtn {
+  background-color: #333;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropdownmenu {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-links {
+  display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  overflow: hidden;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+
+}
+
+.dropdown-links a {
+  color: orange;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+.menubtn:hover a {background-color: #ddd;}
+
+.dropdown-links a:hover{background-color: beige;}
+
+.dropdownmenu:hover .dropdown-links{display: block;}
+
+.menubtn:hover, .menubtn:focus {
+  background-color: rgb(255, 111, 0);
+}
+
+.foxesmain {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: auto auto 1fr;
+  grid-gap: 1em;
+}
+
+.card_text{
+  display: grid;
+  grid-column: span 12;
+  margin-top: 0;
+}
+
+.cardparagraph{
+  display: grid;
+  grid-column: span 12;
+  
+}
+
+h2{
+  grid-column: span 12;
+  color: brown;
+ margin-bottom: 0;
+
+}
+
+h5{
+  grid-column: span 12;
+  display: grid;
+  margin-bottom: 0;
+}
+
+
+.card_title{
+  color: rgba(170, 107, 19, 0.708);
+}
+
+.card_link {
+  padding: 0.5rem;
+  color: bisque;
+  background-color: rgb(255, 98, 30);
+  border-radius: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 1px 1px 5px 5px rgb(255, 98, 0);
+  width: 100px
+  
+}
+
+.card_link:hover{
+  box-shadow: none;
+}
+
+.card_pic{
+  width: 5rem;
+  height: rem;
+}
+.navbar{
+  position: fixed;
+  overflow: hidden;
+  bottom: 0;
+  background-color: black;
+  color: whitesmoke;
+  width: 100%;
+}
+
+.navbar a{
+  display: block;
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background: rgb(255, 111, 0);
+}

@@ -1,0 +1,78 @@
+.App {
+  text-align: center;
+}
+
+img{
+  height: 700px;
+  width: 700px;
+  pointer-events: none;
+}
+
+.buttons{
+  font-size: 36px;
+  position: relative;
+  top: 40px;
+  left: -80px;
+}
+
+span{
+  position: relative;
+  top: 0px;
+  left: -50px;
+  font-size: 50px;
+}
+.number{
+  position: relative;
+  left: 30px;
+  color: green;
+  font-size: 70px;
+  top: 10px;
+  
+}
+
+button{
+  padding: 1.1rem;
+  background-color: green;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 1px 1px 5px 5px lightgreen;
+  width: 240px;
+  border: 4px solid white;
+  font-size: 50px;
+  color: whitesmoke;
+  
+}
+
+.Reorderbtn{
+  padding: 1.1rem;
+  background-color: whitesmoke;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 1px 1px 5px 5px white;
+  width: 240px;
+  border: 4px solid green;
+  font-size: 50px;
+  color: green;
+}
+
+
+
+
+.App-header {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+

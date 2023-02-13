@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="register.css"/>
+  </head>
+  <title>Register</title>
+  <body>
+    <div id="homepage">
+      <header>   
+        <h1> Register For Fox News Packages. 
+        </h1>  
+        <div class="dropdownmenu">
+          <button class="menubtn">Menu</button>
+          <div id="mydropdown" class="dropdown-links">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="register.html">Register</a>
+          </div>
+        </div>
+      </header>
+     
+      <main>
+      <form action="/register" method="post">
+        <form action="/register" method="post">
+          <label for ="Username" class="Usernameinput">
+            Username:  </label> <input name="username" type="text" required/>
+            <label for ="Email" class="Emailinput">
+            Email:  </label> <input name="email" type="text" required>
+            <label for ="ConfirmEmail" class="ConfirmEmailinput">
+            Confirm Email:  </label> <input name="email" type="text" required>
+        <label for ="checkbox" class="checkboxannoy">
+          <span>Do you want to get updates from Fox News ?</span>
+        <input type="checkbox" name="annoy_me"></label>
+        <label for="Tier">Choose a subscription tier:
+        <select name="tier" id="tier">
+        <option selected="Empty">Please Select</option>
+        <option value="1">Silver Fox</option>
+        <option value="2">Sly Fox</option>
+        <option value="3">Foxy Brown</option>
+        </select></label>
+        <button type="submit">Register</button>
+      </form>
+    </main>
+      <footer class="navbar">
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy</a>
+      </footer>
+    </div>
+  </body>
+</html>
+

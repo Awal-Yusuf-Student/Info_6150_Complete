@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="formstyles.css"/>
+  </head>
+  <body>
+    <div id="homepage">
+      <header>   
+        <h1>  Download Programming Skills To Your Brain
+          <img src="https://www.vhv.rs/dpng/d/506-5062640_left-and-right-brain-logo-png-download-left.png" alt="Image Of Brain">
+        </h1>  
+        <nav class="menubar">
+          <ul class="menu">
+            <li><a href="about.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="subscription.html">Subscription</a></li>
+          </ul>
+        </nav>
+      </header>
+     
+      <main>
+      <form action="/submit" method="post">
+        <label for ="Username" class="Usernameinput">
+          Username:  </label> <input name="username" type="text" required/>
+          <label for ="Email" class="Emailinput">
+          Email:  </label> <input name="email" type="text" required>
+        <label for ="checkbox" class="checkboxannoy">
+          <span>Do you want us to send you annoying emails?</span>
+        <input type="checkbox" name="annoy_me"></label>
+        <label for="Tier">Choose a subscription tier:
+        <select name="tier" id="tier">
+        <option selected="Empty">Please Select</option>
+        <option value="1">Silver Tier</option>
+        <option value="2">Gold Tier</option>
+        <option value="3">Platinum Tier</option>
+        </select></label>
+        <button type="submit">Register</button>
+      </form>
+    </main>
+      <footer>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a href="privacy.html">Privacy Policy</a>
+      </footer>
+    </div>
+  </body>
+</html>
+
